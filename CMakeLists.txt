@@ -30,6 +30,7 @@ add_library(ws
 )
 
 # TODO(dkorolev): Maybe guard this by a flag if @Theldus prefers it that way.
+#                 Alternatively, some `ws_headers` INTERFACE target can be added in addition to `ws`.
 target_include_directories(ws INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}")
 
 if(WIN32)
